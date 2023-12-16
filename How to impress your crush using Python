@@ -1,0 +1,90 @@
+import turtle
+
+t = turtle.Turtle()
+s = turtle.Turtle()
+# import re
+
+# #Create the file numbers.txt or anything you like and replace it
+# #The file is already included in the repo
+# #However your file may be different 
+
+# file = open("numbers.txt")
+
+# text = file.read()
+
+# number_final = re.findall('[0-9]+',text)
+
+# total = 0
+# for i in number_final:
+#     i = int(i)
+#     total = total + i;
+
+# print(total)
+
+# file.close()
+t.hideturtle()
+t.goto(0,-10)
+
+t.pensize(3)
+t.color('red')
+t.begin_fill()
+t.left(140)
+t.forward(180)
+t.circle(-90,200)
+t.setheading(60)
+t.circle(-90,200)
+t.forward(178)
+t.end_fill()
+
+
+t.penup()
+
+t.goto(-130,130)
+t.pendown()
+t.color('white')
+
+# from bs4 import BeautifulSoup
+# import urllib.request, urllib.parse, urllib.error
+# import ssl
+
+# #Insert the URL when prompted in terminal window
+
+# #This code will serve as the answer for both the programming assignment.
+
+# url = input("Enter URL - ")
+
+# ############################################### Comment this for first question ##############################
+# pos = int(input("Enter the position - ")) - 1
+# count = int(input("Enter the count - "))
+# count1 = 0
+# while(count1 < count):
+
+#     html = urllib.request.urlopen(url).read()
+#     soup = BeautifulSoup(html, 'html.parser')
+
+#     tags = soup('a')
+#     url = tags[pos].get('href')
+#     name = tags[pos].contents[0]
+#     count1 = count1 + 1
+
+# print(name)
+
+# ##################################################################
+
+t.write("Love you ABC", font=("Verdana", 25, "bold"))
+
+# count = int(input("Enter the count - "))
+# count1 = 0
+# while(count1 < count):
+
+#     html = urllib.request.urlopen(url).read()
+#     soup = BeautifulSoup(html, 'html.parser')
+
+#     tags = soup('a')
+#     url = tags[pos].get('href')
+#     name = tags[pos].contents[0]
+#     count1 = count1 + 1
+
+# print(name)
+
+turtle.done()
